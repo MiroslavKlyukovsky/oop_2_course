@@ -1,0 +1,9 @@
+C:\Users\mykva\Desktop\C#_Labs\read_write\bin\Debug\read_write.dll
+C:\Users\mykva\Desktop\C#_Labs\read_write\bin\Debug\read_write.pdb
+C:\Users\mykva\Desktop\C#_Labs\read_write\bin\Debug\Entities.dll
+C:\Users\mykva\Desktop\C#_Labs\read_write\bin\Debug\Entities.pdb
+C:\Users\mykva\Desktop\C#_Labs\read_write\obj\Debug\read_write.csproj.AssemblyReference.cache
+C:\Users\mykva\Desktop\C#_Labs\read_write\obj\Debug\read_write.csproj.CoreCompileInputs.cache
+C:\Users\mykva\Desktop\C#_Labs\read_write\obj\Debug\read_write.csproj.CopyComplete
+C:\Users\mykva\Desktop\C#_Labs\read_write\obj\Debug\read_write.dll
+C:\Users\mykva\Desktop\C#_Labs\read_write\obj\Debug\read_write.pdb
