@@ -144,7 +144,17 @@ namespace oop_lab1
             int courseN = Int32.Parse(Console.ReadLine());
 
             Console.WriteLine("His ID (xxxxxx):");
-            int id = Int32.Parse(Console.ReadLine());
+            string idd = Console.ReadLine();
+            int id = 0;
+            string strRegex = @"^[0-9]{6}$";
+            Regex re = new Regex(strRegex);
+            if (re.IsMatch(idd))
+            {
+                id = Int32.Parse(idd);
+            }
+            else {
+                id = 0;
+            }
 
             stud_array = stud_array.Append(new Student(firstname,lastname,birthdate,courseN,id)).ToArray();
         }
@@ -223,6 +233,7 @@ namespace oop_lab1
         }
         public void findStudent()
         {
+            bool flag = false;
             Console.WriteLine("Write ID of student to be found: ");
             int id = Int32.Parse(Console.ReadLine());
             foreach (var item in stud_array)
@@ -238,7 +249,13 @@ namespace oop_lab1
                     Console.WriteLine($"Student ID: {item.StudentID}");
                     Console.WriteLine($"Employment Form: {item.employment_form}");
                     Console.WriteLine("-----------------------");
+                    flag = true;
                 }
+            }
+            if (!flag) {
+                    Console.WriteLine("-----------------------");
+                    Console.WriteLine("There is no student with such ID");
+                    Console.WriteLine("-----------------------");
             }
         }
         public void addBaker()

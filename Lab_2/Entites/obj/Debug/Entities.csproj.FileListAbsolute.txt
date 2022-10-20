@@ -1,0 +1,6 @@
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Entites\bin\Debug\Entites.dll
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Entites\bin\Debug\Entites.pdb
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Entites\obj\Debug\Entities.csproj.AssemblyReference.cache
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Entites\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Entites\obj\Debug\Entites.dll
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Entites\obj\Debug\Entites.pdb

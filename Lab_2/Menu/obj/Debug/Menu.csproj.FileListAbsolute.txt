@@ -1,0 +1,9 @@
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Menu\bin\Debug\Menu.dll
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Menu\bin\Debug\Menu.pdb
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Menu\bin\Debug\Entites.dll
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Menu\bin\Debug\Entites.pdb
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Menu\obj\Debug\Menu.csproj.AssemblyReference.cache
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Menu\obj\Debug\Menu.csproj.CoreCompileInputs.cache
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Menu\obj\Debug\Menu.csproj.CopyComplete
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Menu\obj\Debug\Menu.dll
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_2\Menu\obj\Debug\Menu.pdb

@@ -35,7 +35,7 @@ namespace Entities
         }
         private bool isValidDate(string date)
         {
-                string strRegex = @"^[0-9]{2}\.[0-9]{2}\.[0-9]{4}$";
+                string strRegex = @"^[0-9]{2}\.[0-1]{1}[0-9]{1}\.[0-9]{4}$";
                 Regex re = new Regex(strRegex);
                 return re.IsMatch(date);
         }
