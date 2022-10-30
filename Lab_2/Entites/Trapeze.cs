@@ -47,9 +47,9 @@ namespace Entities
             else
                 throw new Exception("Error");
         }
-        public override string ToString()
+        public override string ToString()//FIIIXXX!
         {
-            return $"{this.height} {this.length_of_dow_base}";
+            return $" {this.length_of_dow_base} ";
         }
     }
 }

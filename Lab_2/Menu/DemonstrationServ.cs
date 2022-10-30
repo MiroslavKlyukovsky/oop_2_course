@@ -20,17 +20,21 @@ namespace Menu
 
            
             ShowCollectionWithCaption(trapezes, ConsoleColor.Red);
-            
+            Console.WriteLine("==================================");
+
             trapezes.RemoveAt(0);//Removing elements
 
             ShowCollectionWithCaption(trapezes, ConsoleColor.Yellow);
+            Console.WriteLine("==================================");
 
             trapezes[0] = new Trapeze(10, 6, 10, 2, 2, "Red", "Red");//Reassigning
 
             ShowCollectionWithCaption(trapezes, ConsoleColor.Green);
+            Console.WriteLine("==================================");
 
             ShowCollectionWithCaption(trapezes.FindAll(y => y.height == 10), ConsoleColor.Cyan);//Looking for the special elements
-            
+            Console.WriteLine("==================================");
+
             void ShowCollectionWithCaption(List<Trapeze> trapez, ConsoleColor color)
             {
                 int i = 0;
@@ -56,16 +60,20 @@ namespace Menu
             trapezes.Add(new Trapeze(18, 6, 10, 2, 2, "Orange"));
             trapezes.Add(new Trapeze(8, 6, 4, 2, 2));
             trapezes.Add(new Trapeze(7, 6, 4, 2, 2, "Purple", "Green"));
+            Console.WriteLine("==================================");
 
             ShowCollectionWithCaption(trapezes, ConsoleColor.Red);
+            Console.WriteLine("==================================");
 
             trapezes.RemoveAt(0);//Removing elements
 
             ShowCollectionWithCaption(trapezes, ConsoleColor.Yellow);
+            Console.WriteLine("==================================");
 
             trapezes[0] = new Trapeze(10, 6, 10, 2, 2, "Red", "Red");//Reassigning
 
             ShowCollectionWithCaption(trapezes, ConsoleColor.Green);
+            Console.WriteLine("==================================");
 
             foreach (Trapeze item in trapezes)//Looking for the special elements
             {
@@ -76,6 +84,7 @@ namespace Menu
             }
 
             ShowCollectionWithCaption(trapezes_to_look, ConsoleColor.DarkBlue);
+            Console.WriteLine("==================================");
 
             void ShowCollectionWithCaption(ArrayList trapez, ConsoleColor color)
             {
@@ -99,16 +108,20 @@ namespace Menu
             trapezes[1] = new Trapeze(18, 6, 10, 2, 2, "Orange");
             trapezes[2] = new Trapeze(10, 6, 4, 2, 2);
             trapezes[3] = new Trapeze(7, 6, 4, 2, 2, "Purple", "Green");
+            Console.WriteLine("==================================");
 
             ShowCollectionWithCaption(trapezes, ConsoleColor.Red);
+            Console.WriteLine("==================================");
 
             trapezes = trapezes.Where(e => e.length_of_dow_base != 10).ToArray();//Removing elements and Looking for the special elements
 
             ShowCollectionWithCaption(trapezes, ConsoleColor.Magenta);
+            Console.WriteLine("==================================");
 
             trapezes[1] = new Trapeze(10, 6, 10, 2, 2, "Red", "Red");//Reassigning
 
             ShowCollectionWithCaption(trapezes, ConsoleColor.Green);
+            Console.WriteLine("==================================");
 
             void ShowCollectionWithCaption(Trapeze[] trapez, ConsoleColor color)
             {
@@ -135,12 +148,17 @@ namespace Menu
             BT.Insert(new Trapeze(11, 6, 4, 2, 2, "Purple", "Green"));
             BT.Insert(new Trapeze(19, 6, 4, 2, 2, "Fall", "Green"));
             BT.Insert(new Trapeze(8, 6, 4, 2, 2, "Purp", "Green"));
+            
+
+            Console.WriteLine("==================================");
             BT.DisplayTree();
+            Console.WriteLine("==================================");
+            BT.draw_tree();
+            Console.WriteLine("==================================");
             foreach (var item in BT)
             {
                 Console.WriteLine("length_of_dow_base: "+ item.length_of_dow_base.ToString() + " fill_color: " + item.fill_color);
             }
-            //Current/Reset/MoveNext
         }
     }
 }

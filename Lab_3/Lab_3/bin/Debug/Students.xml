@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Student>
+    <tp_of_occup>student</tp_of_occup>
+    <lastName>Pir</lastName>
+    <firstName>Kir</firstName>
+    <courseN>2</courseN>
+    <studentID>1212</studentID>
+    <hobby>sport</hobby>
+    <hobby_id>0</hobby_id>
+  </Student>
+  <Student>
+    <tp_of_occup>student</tp_of_occup>
+    <lastName>Mir</lastName>
+    <firstName>Dir</firstName>
+    <courseN>2</courseN>
+    <studentID>1111</studentID>
+    <hobby>port</hobby>
+    <hobby_id>0</hobby_id>
+  </Student>
+</ArrayOfStudent>

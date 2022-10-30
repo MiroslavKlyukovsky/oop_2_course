@@ -1,0 +1,12 @@
+DAL.Student KirPir
+{First Name: Kir,
+Last Name: Pir,
+Student ID: 1212,
+Course: 2,
+Hobby: sport,}
+DAL.Student DirMir
+{First Name: Dir,
+Last Name: Mir,
+Student ID: 1111,
+Course: 2,
+Hobby: port,}

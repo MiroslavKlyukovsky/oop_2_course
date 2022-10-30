@@ -155,5 +155,64 @@ namespace Entites.BinTree
             }
             return false;
         }
+
+
+        public void draw_tree() {
+            List<Node<T>> nodes = new List<Node<T>>();
+            nodes.Add(_root);
+
+            int it_number = 0;
+            int helper = _draw_tree().Count;
+            while (nodes.Count != 0)
+            {
+                List<Node<T>> _nodes = new List<Node<T>>();
+                for (int i = helper; i > 0; i--)
+                {
+                   Console.Write("   ");
+                }
+                helper--;
+                
+
+                foreach (var item in nodes)
+                {
+                    Console.Write(item.Data);
+                    if(it_number != 0 && _draw_tree().Count-1 >= it_number+1 && _draw_tree()[it_number-1] < _draw_tree()[it_number])
+                    {
+                        Console.Write("    ");
+                    }
+                    Console.Write("  ");
+
+                    if (item.Left != null){ _nodes.Add(item.Left); }
+                    if (item.Right != null){ _nodes.Add(item.Right); }
+                }
+                Console.Write("\n");
+
+                nodes = _nodes;
+                it_number++;
+            }
+        }
+        public List<int> _draw_tree() {
+
+            List<Node<T>> nodes = new List<Node<T>>();
+            nodes.Add(_root);
+            List<int> fix = new List<int>();
+            while (nodes.Count != 0)
+            {
+                List<Node<T>> _nodes = new List<Node<T>>();
+                
+                foreach (var item in nodes)
+                {
+                 
+
+                    if (item.Left != null) { _nodes.Add(item.Left); }
+                    if (item.Right != null) { _nodes.Add(item.Right); }
+                }
+              
+
+                nodes = _nodes;
+                fix.Add(nodes.Count);
+            }
+            return fix;
+        }
     }
 }
