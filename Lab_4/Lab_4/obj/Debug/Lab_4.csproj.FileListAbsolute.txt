@@ -1,0 +1,10 @@
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_4\bin\Debug\Lab_4.exe.config
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_4\bin\Debug\Lab_4.exe
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_4\bin\Debug\Lab_4.pdb
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_4\bin\Debug\MyTasks.dll
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_4\bin\Debug\MyTasks.pdb
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_4\obj\Debug\Lab_4.csproj.AssemblyReference.cache
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_4\obj\Debug\Lab_4.csproj.CoreCompileInputs.cache
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_4\obj\Debug\Lab_4.csproj.CopyComplete
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_4\obj\Debug\Lab_4.exe
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\Lab_4\obj\Debug\Lab_4.pdb

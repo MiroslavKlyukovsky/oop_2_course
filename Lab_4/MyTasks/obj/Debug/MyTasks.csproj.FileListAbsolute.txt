@@ -1,0 +1,6 @@
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\MyTasks\bin\Debug\MyTasks.dll
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\MyTasks\bin\Debug\MyTasks.pdb
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\MyTasks\obj\Debug\MyTasks.csproj.AssemblyReference.cache
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\MyTasks\obj\Debug\MyTasks.csproj.CoreCompileInputs.cache
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\MyTasks\obj\Debug\MyTasks.dll
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\MyTasks\obj\Debug\MyTasks.pdb
