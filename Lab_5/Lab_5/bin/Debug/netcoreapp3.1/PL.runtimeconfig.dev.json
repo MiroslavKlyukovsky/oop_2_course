@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\mykva\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\mykva\\.nuget\\packages"
+    ]
+  }
+}

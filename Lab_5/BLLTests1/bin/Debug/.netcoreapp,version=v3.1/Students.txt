@@ -1,0 +1,8 @@
+DAL.Entities.Student MiroslavKlyukovsky
+{First Name: Miroslav,
+Last Name: Klyukovsky,
+Student ID: 2,
+Course: 2,
+Hobby: sport,
+Hobby ID: 3,
+Level in sport: 5,}
