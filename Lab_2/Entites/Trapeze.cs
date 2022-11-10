@@ -47,7 +47,7 @@ namespace Entities
             else
                 throw new Exception("Error");
         }
-        public override string ToString()//FIIIXXX!
+        public override string ToString()//XXX
         {
             return $" {this.length_of_dow_base} ";
         }

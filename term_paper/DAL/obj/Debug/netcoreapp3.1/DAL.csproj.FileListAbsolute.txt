@@ -1,0 +1,10 @@
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\term_paper\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\term_paper\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\term_paper\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\term_paper\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.AssemblyReference.cache
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\term_paper\DAL\obj\Debug\netcoreapp3.1\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\term_paper\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\term_paper\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\term_paper\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\term_paper\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\Users\mykva\Desktop\C#_Labs\oop_2_course\term_paper\DAL\obj\Debug\netcoreapp3.1\DAL.pdb

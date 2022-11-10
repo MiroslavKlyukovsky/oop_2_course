@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfFlat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Flat>
+    <ID>100</ID>
+    <cost>4500</cost>
+    <bedroom_n>1</bedroom_n>
+    <furnitering_level>5</furnitering_level>
+    <proxim_to_center>4</proxim_to_center>
+    <private_plot>5</private_plot>
+    <add_info>Nice flat.</add_info>
+  </Flat>
+  <Flat>
+    <ID>101</ID>
+    <cost>60000</cost>
+    <bedroom_n>6</bedroom_n>
+    <furnitering_level>8</furnitering_level>
+    <proxim_to_center>3</proxim_to_center>
+    <private_plot>140</private_plot>
+    <add_info>Nice for narcos.</add_info>
+  </Flat>
+</ArrayOfFlat>

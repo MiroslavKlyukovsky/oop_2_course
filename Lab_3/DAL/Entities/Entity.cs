@@ -26,7 +26,6 @@ namespace DAL
             this.right_side = right_side;
         }
         public Entity() { 
-            //NOT SO SURE ABOUT IT
         }
         public float area_calculation()
         {

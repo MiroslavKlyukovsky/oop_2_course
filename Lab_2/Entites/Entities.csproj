@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="Tree\Node.cs" />
     <Compile Include="Tree\Tree.cs" />
-    <Compile Include="Interface.cs" />
     <Compile Include="Trapeze.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
