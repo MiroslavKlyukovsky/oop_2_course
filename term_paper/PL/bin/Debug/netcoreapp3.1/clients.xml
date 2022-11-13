@@ -1,67 +1,14 @@
 <?xml version="1.0"?>
 <ArrayOfСlient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Сlient>
-    <ID>1001</ID>
-    <name>Pablo</name>
-    <surname>Escobar</surname>
-    <bank_account>101</bank_account>
-    <bank_account_balance>250000</bank_account_balance>
-    <prefearings>
-      <cost>
-        <min>45000</min>
-        <max>100000</max>
-      </cost>
-      <bedroom_n>
-        <min>4</min>
-        <max>10</max>
-      </bedroom_n>
-      <furnitering_level>
-        <min>6</min>
-        <max>10</max>
-      </furnitering_level>
-      <proxim_to_center>
-        <min>2</min>
-        <max>4</max>
-      </proxim_to_center>
-      <private_plot>
-        <min>100</min>
-        <max>200</max>
-      </private_plot>
-    </prefearings>
-    <add_info>Pablo is a drug dealer.</add_info>
-    <rented_apartment>
-      <ID>-1</ID>
-      <cost>-1</cost>
-      <bedroom_n>-1</bedroom_n>
-      <furnitering_level>-1</furnitering_level>
-      <proxim_to_center>-1</proxim_to_center>
-      <private_plot>-1</private_plot>
-      <add_info />
-    </rented_apartment>
-    <offers>
-      <offers>
-        <Flat>
-          <ID>101</ID>
-          <cost>60000</cost>
-          <bedroom_n>6</bedroom_n>
-          <furnitering_level>8</furnitering_level>
-          <proxim_to_center>3</proxim_to_center>
-          <private_plot>140</private_plot>
-          <add_info>Nice for narcos.</add_info>
-        </Flat>
-      </offers>
-      <number_of_elements>1</number_of_elements>
-    </offers>
-  </Сlient>
-  <Сlient>
-    <ID>1000</ID>
-    <name>Yaroslav</name>
+    <ID>100100</ID>
+    <name>Miroslav</name>
     <surname>Klyukovsky</surname>
-    <bank_account>100</bank_account>
-    <bank_account_balance>50000</bank_account_balance>
+    <bank_account>10100</bank_account>
+    <bank_account_balance>60000</bank_account_balance>
     <prefearings>
       <cost>
-        <min>3500</min>
+        <min>3000</min>
         <max>10000</max>
       </cost>
       <bedroom_n>
@@ -70,26 +17,26 @@
       </bedroom_n>
       <furnitering_level>
         <min>3</min>
-        <max>7</max>
+        <max>6</max>
       </furnitering_level>
       <proxim_to_center>
-        <min>3</min>
-        <max>10</max>
+        <min>2</min>
+        <max>6</max>
       </proxim_to_center>
       <private_plot>
-        <min>4</min>
-        <max>20</max>
+        <min>0</min>
+        <max>5</max>
       </private_plot>
     </prefearings>
-    <add_info>Nice guy.</add_info>
+    <add_info>Nice guy. Likes sport.</add_info>
     <rented_apartment>
-      <ID>100</ID>
-      <cost>4500</cost>
-      <bedroom_n>1</bedroom_n>
-      <furnitering_level>5</furnitering_level>
-      <proxim_to_center>4</proxim_to_center>
-      <private_plot>5</private_plot>
-      <add_info>Nice flat.</add_info>
+      <ID>-1</ID>
+      <cost>-1</cost>
+      <bedroom_n>-1</bedroom_n>
+      <furnitering_level>-1</furnitering_level>
+      <proxim_to_center>-1</proxim_to_center>
+      <private_plot>-1</private_plot>
+      <add_info />
     </rented_apartment>
     <offers>
       <offers />

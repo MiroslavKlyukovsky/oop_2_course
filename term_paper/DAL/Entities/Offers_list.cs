@@ -17,6 +17,7 @@ namespace DAL.Entities
         }
         public void remove_offer(Flat flat) {
             offers.Remove(flat);
+            number_of_elements--;
         }
     }
 }

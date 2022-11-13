@@ -7,8 +7,8 @@ namespace BLL
 {
     public class EntityService
     {
-        EntityContext<Flat> flat_serv = new EntityContext<Flat>();
-        EntityContext<Сlient> client_serv = new EntityContext<Сlient>();
+        public EntityContext<Flat> flat_serv = new EntityContext<Flat>();
+        public EntityContext<Сlient> client_serv = new EntityContext<Сlient>();
 
         private List<Flat> flats;
         private List<Сlient> clients;
@@ -34,8 +34,12 @@ namespace BLL
             clients.Remove(clients.Find(x => x.ID == ID));
         }
         //changing
+        //*
         public void add_prefearings(int ClientID, int min_cost, int max_cost, int min_bed, int max_bed, int min_furnt, int max_furnt, int min_proxim_to_cente, int max_proxim_to_cente, int min_private_plot, int max_private_plot) {
             clients.Find(x => x.ID == ClientID).prefearings = new Preferences(min_cost, max_cost, min_bed, max_bed, min_furnt, max_furnt, min_proxim_to_cente, max_proxim_to_cente, min_private_plot, max_private_plot);
+        }
+        public void change_client_id(int ClientID, int newID) {
+            clients.Find(x => x.ID == ClientID).ID = newID;
         }
         public void change_client_rented_apartment(int ClientID, int AppartmentID)
         {
@@ -58,6 +62,29 @@ namespace BLL
         }
         public void change_client_add_info(int ClientID, string new_add_info) {
             clients.Find(x => x.ID == ClientID).add_info = new_add_info;
+        }
+        public string smash_or_pass_offers(int ClientID) {
+            Offers_list of = clients.Find(x => x.ID == ClientID).offers;
+            List<Flat> matrix = new List<Flat>();
+            if (of == null) 
+            { 
+                return "No offers to reflect.";
+            }
+            else
+            {
+                foreach (var item in of.offers)
+                {
+                    if (!does_takes(ClientID, item.ID))
+                    {
+                        matrix.Add(item);   
+                    }
+                }
+                foreach (var item in matrix)
+                {
+                    of.remove_offer(item);
+                }
+            }
+            return "Client watched offers.";
         }
         //info
         public string see_client_info(int ClientID) {
