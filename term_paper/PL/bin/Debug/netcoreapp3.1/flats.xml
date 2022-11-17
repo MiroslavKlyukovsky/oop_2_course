@@ -9,4 +9,13 @@
     <private_plot>40</private_plot>
     <add_info>Nice.</add_info>
   </Flat>
+  <Flat>
+    <ID>100101</ID>
+    <cost>12500</cost>
+    <bedroom_n>2</bedroom_n>
+    <furnitering_level>6</furnitering_level>
+    <proxim_to_center>6</proxim_to_center>
+    <private_plot>40</private_plot>
+    <add_info>Big yard.</add_info>
+  </Flat>
 </ArrayOfFlat>

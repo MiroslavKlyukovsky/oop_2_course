@@ -29,44 +29,105 @@ namespace BLL
             Сlient client = new Сlient(ID, name, surname, bank_account, bank_account_balance, add_info);
             clients.Add(client);
         }
-        public void remove_client(int ID)
+        public string remove_client(int ID)
         {
-            clients.Remove(clients.Find(x => x.ID == ID));
+            if (clients.Remove(clients.Find(x => x.ID == ID))) { return $"Client with ID {ID} removed."; }
+            else
+            {
+                return $"No client with ID {ID}";
+            }
+            
         }
         //changing
         //*
         public void add_prefearings(int ClientID, int min_cost, int max_cost, int min_bed, int max_bed, int min_furnt, int max_furnt, int min_proxim_to_cente, int max_proxim_to_cente, int min_private_plot, int max_private_plot) {
             clients.Find(x => x.ID == ClientID).prefearings = new Preferences(min_cost, max_cost, min_bed, max_bed, min_furnt, max_furnt, min_proxim_to_cente, max_proxim_to_cente, min_private_plot, max_private_plot);
         }
-        public void change_client_id(int ClientID, int newID) {
-            clients.Find(x => x.ID == ClientID).ID = newID;
+        public string change_client_id(int ClientID, int newID) {
+            if (clients.Exists(x => x.ID == ClientID))
+            {
+                clients.Find(x => x.ID == ClientID).ID = newID;
+                return $"Client with ID {ClientID} now has ID {newID}.";
+            }
+            else
+            {
+                return $"There is no client with ID {ClientID}.";
+            }
         }
-        public void change_client_rented_apartment(int ClientID, int AppartmentID)
+        public string change_client_rented_apartment(int ClientID, int AppartmentID)
         {
-            clients.Find(x => x.ID == ClientID).rented_apartment = flats.Find(x => x.ID == AppartmentID);
+            if (clients.Exists(x => x.ID == ClientID))
+            {
+                clients.Find(x => x.ID == ClientID).rented_apartment = flats.Find(x => x.ID == AppartmentID);
+                return $"Client with ID {ClientID} now has apartment with ID {AppartmentID}.";
+            }
+            else
+            {
+                return $"There is no client with ID {ClientID}.";
+            }
         }
-        public void change_client_name(int ClientID, string new_name) {
-            clients.Find(x => x.ID == ClientID).name = new_name;
+        public string change_client_name(int ClientID, string new_name) {
+            if (clients.Exists(x => x.ID == ClientID))
+            {
+                clients.Find(x => x.ID == ClientID).name = new_name;
+                return $"Client with ID {ClientID} now has name {new_name}.";
+            }
+            else
+            {
+                return $"There is no client with ID {ClientID}.";
+            }
         }
-        public void change_client_surname(int ClientID, string new_surname)
+        public string change_client_surname(int ClientID, string new_surname)
         {
-            clients.Find(x => x.ID == ClientID).surname = new_surname;
+            if (clients.Exists(x => x.ID == ClientID))
+            {
+                clients.Find(x => x.ID == ClientID).surname = new_surname;
+                return $"Client with ID {ClientID} now has surname {new_surname}.";
+            }
+            else
+            {
+                return $"There is no client with ID {ClientID}.";
+            }
         }
-        public void change_client_bank_account(int ClientID, int new_bank_acc)
+        public string change_client_bank_account(int ClientID, int new_bank_acc)
         {
-            clients.Find(x => x.ID == ClientID).bank_account = new_bank_acc;
+            if (clients.Exists(x => x.ID == ClientID))
+            {
+                clients.Find(x => x.ID == ClientID).bank_account = new_bank_acc;
+                return $"Client with ID {ClientID} now has bank account {clients.Find(x => x.ID == ClientID).bank_account}.";
+            }
+            else
+            {
+                return $"There is no client with ID {ClientID}.";
+            }
         }
-        public void change_client_bank_balance(int ClientID, int new_bank_bal)
+        public string change_client_bank_balance(int ClientID, int new_bank_bal)
         {
-            clients.Find(x => x.ID == ClientID).bank_account_balance = new_bank_bal;
+            if (clients.Exists(x => x.ID == ClientID))
+            {
+                clients.Find(x => x.ID == ClientID).bank_account_balance = new_bank_bal;
+                return $"Client with ID {ClientID} now has bank balance {clients.Find(x => x.ID == ClientID).bank_account_balance}.";
+            }
+            else
+            {
+                return $"There is no client with ID {ClientID}.";
+            }
         }
-        public void change_client_add_info(int ClientID, string new_add_info) {
-            clients.Find(x => x.ID == ClientID).add_info = new_add_info;
+        public string change_client_add_info(int ClientID, string new_add_info) {
+            if (clients.Exists(x => x.ID == ClientID))
+            {
+                clients.Find(x => x.ID == ClientID).add_info = new_add_info;
+                return $"Client with ID {ClientID} now has add info: {clients.Find(x => x.ID == ClientID).add_info}.";
+            }
+            else
+            {
+                return $"There is no client with ID {ClientID}.";
+            }
         }
         public string smash_or_pass_offers(int ClientID) {
             Offers_list of = clients.Find(x => x.ID == ClientID).offers;
             List<Flat> matrix = new List<Flat>();
-            if (of == null) 
+            if (of == null || of.number_of_elements == 0) 
             { 
                 return "No offers to reflect.";
             }
@@ -83,8 +144,8 @@ namespace BLL
                 {
                     of.remove_offer(item);
                 }
+                return "Client watched offers.";
             }
-            return "Client watched offers.";
         }
         //info
         public string see_client_info(int ClientID) {
@@ -112,23 +173,52 @@ namespace BLL
             clients.Sort((x, y) => Int32.Parse(x.bank_account.ToString().Substring(0, 1)).CompareTo(Int32.Parse(y.bank_account.ToString().Substring(0, 1))));
         }
         //APPARTMENT
-        public void add_appartment(int ID, int cost, int bedroom_n, int furnitering_level, int proxim_to_center, int private_plot, string add_info) {
+        public string add_appartment(int ID, int cost, int bedroom_n, int furnitering_level, int proxim_to_center, int private_plot, string add_info) {
             flats.Add(new Flat(ID, cost, bedroom_n, furnitering_level, proxim_to_center, private_plot, add_info));
+            return see_apartment_info(ID);
         }
-        public void remove_apartment(int id) {
-            flats.Remove(flats.Find(x => x.ID == id));
+        public string remove_apartment(int id) {
+            if (flats.Remove(flats.Find(x => x.ID == id))) { return $"Flat with ID {id} removed."; }
+            else
+            {
+                return $"No flat with ID {id}.";
+            }
         }
         //changing
-        public void change_apartment_cost(int id, int new_cost){
-            flats.Find(x => x.ID == id).cost = new_cost;
+        public string change_apartment_cost(int id, int new_cost){
+            if (flats.Exists(x => x.ID == id))
+            {
+                flats.Find(x => x.ID == id).cost = new_cost;
+                return $"Flat with ID {id} now has cost {new_cost}.";
+            }
+            else
+            {
+                return $"There is no flats with ID {id}.";
+            }
         }
-        public void change_apartment_bedroom_n(int id, int new_bedroom_n)
+        public string change_apartment_bedroom_n(int id, int new_bedroom_n)
         {
-            flats.Find(x => x.ID == id).bedroom_n = new_bedroom_n;
+            if (flats.Exists(x => x.ID == id))
+            {
+                flats.Find(x => x.ID == id).bedroom_n = new_bedroom_n;
+                return $"Flat with ID {id} now has bedroom number {new_bedroom_n}.";
+            }
+            else
+            {
+                return $"There is no flats with ID {id}.";
+            }
         }
-        public void change_furnitering_level(int id,int new_furnitering_level) 
+        public string change_furnitering_level(int id,int new_furnitering_level) 
         {
-            flats.Find(x => x.ID == id).furnitering_level = new_furnitering_level;
+            if (flats.Exists(x => x.ID == id))
+            {
+                flats.Find(x => x.ID == id).furnitering_level = new_furnitering_level;
+                return $"Flat with ID {id} now has furnituring level {new_furnitering_level}.";
+            }
+            else
+            {
+                return $"There is no flats with ID {id}.";
+            }
         }
         public void change_proxim_to_center(int id, int new_proxim_to_center) {
             flats.Find(x => x.ID == id).proxim_to_center = new_proxim_to_center;
@@ -165,8 +255,16 @@ namespace BLL
         }
         //ADDITIONAL FUNCTIONALITY
         //1
-        public void add_offer_to_cli(int ID, int aID) {
-            clients.Find(x => x.ID == ID).offers.take_offer(flats.Find(x => x.ID == aID));
+        public string add_offer_to_cli(int ID, int aID) {
+            if (clients.Exists(x => x.ID == ID))
+            {
+                clients.Find(x => x.ID == ID).offers.take_offer(flats.Find(x => x.ID == aID));
+                return $"Client with ID {ID} now has apartment with ID {aID} as offer.";
+            }
+            else
+            {
+                return $"There is no clients with ID {ID}.";
+            }
         }
         public string see_all_offers(int ID) {
             Offers_list offers = new Offers_list();

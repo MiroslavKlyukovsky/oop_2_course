@@ -189,7 +189,7 @@ namespace PL
                             Console.WriteLine("Enter the ID of the client to be deleted: ");
                             int ID = 0;
                             is_Valid("^[1-9][0-9]{5}$", Console.ReadLine(), ref ID, "ID");
-                            server.remove_client(ID);
+                            Console.WriteLine(server.remove_client(ID));
                         }
                         if (str[1] == 'A')
                         {

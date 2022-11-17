@@ -39,6 +39,59 @@
       <add_info />
     </rented_apartment>
     <offers>
+      <offers>
+        <Flat>
+          <ID>100100</ID>
+          <cost>12000</cost>
+          <bedroom_n>3</bedroom_n>
+          <furnitering_level>4</furnitering_level>
+          <proxim_to_center>5</proxim_to_center>
+          <private_plot>40</private_plot>
+          <add_info>Nice.</add_info>
+        </Flat>
+      </offers>
+      <number_of_elements>1</number_of_elements>
+    </offers>
+  </Сlient>
+  <Сlient>
+    <ID>100101</ID>
+    <name>Pavlo</name>
+    <surname>Klyukov</surname>
+    <bank_account>10101</bank_account>
+    <bank_account_balance>130000</bank_account_balance>
+    <prefearings>
+      <cost>
+        <min>6000</min>
+        <max>14000</max>
+      </cost>
+      <bedroom_n>
+        <min>1</min>
+        <max>3</max>
+      </bedroom_n>
+      <furnitering_level>
+        <min>5</min>
+        <max>8</max>
+      </furnitering_level>
+      <proxim_to_center>
+        <min>10</min>
+        <max>0</max>
+      </proxim_to_center>
+      <private_plot>
+        <min>10</min>
+        <max>45</max>
+      </private_plot>
+    </prefearings>
+    <add_info>Likes yards.</add_info>
+    <rented_apartment>
+      <ID>-1</ID>
+      <cost>-1</cost>
+      <bedroom_n>-1</bedroom_n>
+      <furnitering_level>-1</furnitering_level>
+      <proxim_to_center>-1</proxim_to_center>
+      <private_plot>-1</private_plot>
+      <add_info />
+    </rented_apartment>
+    <offers>
       <offers />
       <number_of_elements>0</number_of_elements>
     </offers>
